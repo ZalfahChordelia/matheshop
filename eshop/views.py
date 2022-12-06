@@ -474,6 +474,7 @@ from django.template.loader import get_template
 from django.template import Context
 from django.http import HttpResponse
 
+
 def render_to_pdf(template_src, context_dict):
     template = get_template(template_src)
     html  = template.render(context_dict)

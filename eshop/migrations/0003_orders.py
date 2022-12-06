@@ -20,8 +20,8 @@ class Migration(migrations.Migration):
                 ('mobile', models.CharField(max_length=20, null=True)),
                 ('order_date', models.DateField(auto_now_add=True, null=True)),
                 ('status', models.CharField(choices=[('Pending', 'Pending'), ('Order Confirmed', 'Order Confirmed'), ('Out for Delivery', 'Out for Delivery'), ('Delivered', 'Delivered')], max_length=50, null=True)),
-                ('customer', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='ecom.Customer')),
-                ('product', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='ecom.Product')),
+                ('customer', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='eshop.Customer')),
+                ('product', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='eshop.Product')),
             ],
         ),
     ]
